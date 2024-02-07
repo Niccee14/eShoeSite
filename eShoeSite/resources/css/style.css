@@ -1,0 +1,356 @@
+/* Universal Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+:root{
+    --theme-col: #2d4bf0;
+}
+
+/* Header */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: gray;
+    color: white;
+    padding-right: 2rem;
+}
+
+.brand-title {
+    font-size: 2rem;
+    margin: 1rem;
+}
+
+.navbar-links ul {
+    display: flex;
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links li a {
+    text-decoration: none;
+    padding: 1rem;
+    color: white;
+    display: block;
+}
+
+.navbar-links a:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+/* Splash */
+
+.splash {
+    background-image: url(../images/splashv3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    width: 100%;
+    height: 600px;
+    margin: 0 auto;
+    
+}
+
+.splash h1 {
+    position: absolute;
+    top: 40%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    font-size: 4rem;
+    color: white;
+    text-shadow: 8px 7px 5px black;
+}
+
+/* Product preview */
+
+.product-portfolio h2 {
+    font-size: 2.3rem;
+    padding: 1rem 0;
+    text-align: center;
+    margin: 0 auto;
+    background-image: url(../images/portfolio.jpg);
+    color:white;
+    text-decoration: underline;
+}
+.products {
+    display: flex;
+    flex-wrap: wrap;
+}
+.product {
+    display: flex;
+    width: 250px;
+    height: 400px;
+    align-items: flex-end;
+    flex-grow: 1;
+}
+.description {
+    background-color: black;
+    opacity: 0.8;
+    width: 100%;
+    padding: 15px 30px;
+    text-align: center;
+}
+
+.description h3 {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.description h4 {
+    font-size: 1rem;
+    color: white;
+}
+
+#product1 {
+    background-image: url(../images/product1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#product2 {
+    background-image: url(../images/product2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#product3 {
+    background-image: url(../images/product3.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#product4 {
+    background-image: url(../images/product4.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}   
+/* About us */
+
+.container {
+    background-image: url(../images/about-us2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: .5rem;
+    width: 100%;
+    color:white;
+    background-image: url();
+    text-decoration: underline;
+}
+
+.about-us h3 {
+    font-size: 1.5rem;
+    text-decoration: underline;
+    text-align: center;
+    padding-bottom: 0.5rem;
+    padding-top: 1rem;
+}
+
+.about-us .info {
+    text-align: center;
+    line-height: 1.4;
+    color: white;
+    padding-bottom: 1.5rem;
+}
+
+/* Footer */
+
+footer {
+    background-color: #111010;
+}
+
+.f-con {
+    display:grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-gap: 2rem;
+    padding: 1.5rem 4rem;
+}
+
+footer .app-name {
+    color: white;
+    border-left: 4px solid var(--theme-col);
+    padding-left: 1.5rem;
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    font-weight: 700;
+}
+
+.app-name .app-initial{
+    color: var(--theme-col);
+    font-size: 2rem;
+}
+
+footer .footer-title {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    color: white;
+    border-left: 4px solid var(--theme-col);
+    padding-left: 1.5rem;
+    height: fit-content;
+}
+footer .contact-info ul {
+    list-style: none;
+    padding-left: 1.75rem;
+    color: white;
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+    margin-top: .5rem;
+}
+
+footer ul li{ 
+    margin: .25rem 0;
+    cursor: pointer;
+    color: #d4d4d4;
+    width: fit-content;
+    font-size: 0.8rem;
+}
+
+footer ul li:hover {
+    color:blue;
+}
+
+.g-i-t{
+    display: grid;
+    grid-column-start: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.g-i-t form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    --tw-space-y-reverse: 0;
+    margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
+}
+form .g-inp{
+    padding: .25rem .5rem;
+    font-size: 16px;
+}
+.g-inp textarea{
+    height: 150px;
+}
+
+.f-btn{
+    padding: .25rem 1rem;
+    background-color: var(--theme-col);
+    border-radius: .25rem;
+    font-size: 16px;
+    color: white;
+    font-weight: 500;
+}
+
+footer .copyright {
+    background-color: #232127;
+    color: white;
+    padding: 1rem 4rem;
+    text-align: center;
+}
+
+@media (max-width: 910px) {
+    footer .f-con {
+        grid-gap: 1rem;
+        padding: 1rem 2rem;
+    }
+}
+@media (max-width: 803px) {
+    footer .app-name {
+        font-size: 1.5rem;
+    }
+    footer .app-name .app-initial {
+        font-size: 1.7rem
+    }
+}
+
+@media (max-width: 710px) {
+    .g-i-t {
+        display: none;
+    }
+    footer .f-con {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 642px) {
+    .navbar {
+        padding-right: 0;
+    }
+    .brand-title {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 563px) {
+    .navbar-links li a {
+        padding: 0.5rem;
+        font-size: 0.75rem;
+        
+    }
+    .brand-title {
+        font-size: 1.0rem;
+    }
+    .splash h1 {
+        font-size: 3rem;
+    }
+    .product-portfolio h2 {
+        font-size: 1.8rem;
+    }
+    .description h3 {
+        font-size: 1.2rem;
+    }
+    .container h2 {
+        font-size: 1.5rem;
+    }
+    .info p {
+        font-size: 0.8rem;
+    }
+    footer .app-name {
+        font-size: 1.2rem;
+    }
+    .app-name .app-initial {
+        font-size: 1.4rem;
+    }
+    .footer-title {
+        font-size: 1rem;
+    }
+    footer ul li {
+        font-size: 0.8rem;
+    }
+    footer .copyright {
+        font-size: 0.8rem;
+    }
+}
+@media (max-width: 460px) {
+    footer .app-name {
+        display: none;
+    }
+    footer .f-con {
+        grid-template-columns: auto;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 400px) {
+    .brand-title {
+        font-size: 0.8rem;
+    }
+}
